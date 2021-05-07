@@ -1,0 +1,47 @@
+.card {
+  border: none;
+}
+
+.card-body {
+  padding-bottom: 40px;
+}
+
+.card-img {
+	border-radius: 0;
+}
+
+.card-bg-blue {
+	background-color: #81b3d2;
+}
+
+.card-bg-triangle {
+	  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 37px;
+    
+    background: url(../images/bg-triangle.svg) center no-repeat;
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  
+  & .card-body {
+    
+    @media (max-width: 768px) {
+      padding-top: 79px;
+    }
+  }
+}
+
+.card-text {
+	margin-bottom: 15px;
+}
+
+
+
+

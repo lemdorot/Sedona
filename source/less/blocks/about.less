@@ -1,0 +1,41 @@
+.about {
+	padding: 40px 0;
+  
+  @media (min-width: 768px) {
+    font-size: 14px;
+    padding: 43px 0;
+  }
+}
+
+.about-link {
+	line-height: 26px;
+
+  &:hover,
+  &:focus {
+    color: #111;
+
+    & .about-img {
+      fill: #81b3d2;
+    }
+  }
+
+  &:active {
+    color: #111;
+
+    & .about-img {
+      fill: rgba(0, 0, 0, .3);
+    }
+  }
+  
+  @media (min-width: 768px) {
+    margin-right: -5px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-right: -31px;
+  }
+}
+
+.about-img {
+	margin-left: 10px;
+}

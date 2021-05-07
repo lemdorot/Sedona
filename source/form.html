@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+   
+    <title>Sedona</title>
+    
+  </head>
+  <body>
+
+    <div style="display:none">
+      <include src="build/images/sprite.svg"></include>
+    </div>
+   
+    <header class="page-header">
+      <div class="container">
+        <div class="row">
+          <nav class="navbar justify-content-center navbar-expand-lg w-100">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav justify-content-lg-between w-100">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="photo.html">Фото и видео</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Форма отзыва <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">HTML academy</a>
+                </li>
+              </ul>
+            </div>
+            <a class="navbar-brand align-self-center" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="images/logo-sedona-desktop.svg">
+                <source media="(min-width: 768px)" srcset="images/logo-sedona-tablet.svg">
+                <img class="d-inline-block align-top navbar-img" src="images/logo-sedona-mobile.svg" alt="Логотип Sedona" width="101" height="84">
+              </picture>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    <section class="intro">
+      <div class="container">
+        <div class="row">
+          <div class="intro-wrapper justify-content-center d-flex w-100">
+            <svg class="intro-image" width="230" height="40">
+              <use xlink:href="#text-sedona"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="slogan">
+      <div class="container">
+        <div class="row slogan-wrapper">
+          <h1 class="slogan-title text-center w-100">Оставьте свой отзыв</h1>
+          <p class="slogan-text text-center w-100">Помогите нашим отелям стать лучше! оставьте отзыв о них, <br> а также о посещенных вами достопримечательностях</p>
+        </div>
+      </div>
+    </section>
+    
+    <form action="#" class="page-form form">
+      <div class="container">
+        <div class="row form-wrapper">
+         
+          <div class="form-personal personal col-12 col-lg-6 order-lg-1">
+            <h5 class="form-subtitle text-center text-lg-left">Представьтесь:</h5>
+            <div class="form-group row flex-nowrap">
+              <label class="col-auto col-form-label" for="input-name">Имя*:</label>
+              <div class="flex-grow-1 personal-input">
+                <input class="form-control" type="text" id="input-name" placeholder="Петр">
+              </div>
+            </div>
+            <div class="form-group row flex-nowrap">
+              <label class="col-auto col-form-label" for="input-surname">Фамилия*:</label>
+              <div class="flex-grow-1 personal-input">
+                <input class="form-control" type="text" id="input-surname" placeholder="Иванов">
+              </div>
+            </div>
+            <div class="form-group row flex-nowrap">
+              <label class="col-auto col-form-label" for="input-patronymic">Отчество:</label>
+              <div class="flex-grow-1 personal-input">
+                <input class="form-control" type="text" id="input-patronymic" placeholder="Александрович">
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-contacts contacts col-12 order-lg-2">
+            <h5 class="form-subtitle form-subtitle--line text-center">Контактная информация:</h5>
+            <div class="d-xl-flex">
+              <div class="form-group col-xl-6 d-xl-flex">
+                <label for="input-tel"><span class="d-xl-none">Контактный </span>телефон*:</label>
+                <div class="input-wrapper d-flex">
+                  <input class="form-control" type="tel" id="input-tel" placeholder="Введите телефон">
+                  <span class="contacts-icon contacts-icon--tel"></span>
+                </div>
+              </div>
+              <div class="form-group col-xl-6 d-xl-flex">
+                <label for="input-mail">Электронная почта*:</label>
+                <div class="input-wrapper d-flex">
+                  <input class="form-control" type="email" id="input-mail" placeholder="Введите e-mail">
+                  <span class="contacts-icon contacts-icon--email"></span>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <div class="form-impression impression col-12 col-lg-6 order-lg-0">
+            <h5 class="form-subtitle text-center text-lg-left">Ваше Общее впечатление:</h5>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input impression-radio sr-only" type="radio" name="radio-impression" id="radio-impression-1" value="impression-1" checked>
+                <label class="form-check-label" for="radio-impression-1">
+                  Скорее положительное
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input impression-radio sr-only" type="radio" name="radio-impression" id="radio-impression-2" value="impression-2">
+                <label class="form-check-label" for="radio-impression-2">
+                  Скорее отрицательное
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input impression-radio sr-only" type="radio" name="radio-impression" id="radio-impression-3" value="impression-3">
+                <label class="form-check-label" for="radio-impression-3">
+                  Затрудняюсь ответить
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-sight sight col-12 order-lg-3">
+            <h5 class="form-subtitle form-subtitle--line text-center">Посещенные достопримечательности:</h5>
+            <div class="form-group d-lg-flex justify-content-lg-center justify-content-xl-between flex-wrap">
+              <div class="form-check col-lg-5 col-xl-auto">
+                <input class="form-check-input sight-check sr-only" type="checkbox" id="check-sight-1" value="sight-1" checked>
+                <label class="form-check-label" for="check-sight-1">
+                  Мост Дьявола
+                </label>
+              </div>
+              <div class="form-check col-lg-5 col-xl-auto">
+                <input class="form-check-input sight-check sr-only" type="checkbox" id="check-sight-2" value="sight-2">
+                <label class="form-check-label" for="check-sight-2">
+                  Гора-Колокол
+                </label>
+              </div>
+              <div class="form-check col-lg-5 col-xl-auto">
+                <input class="form-check-input sight-check sr-only" type="checkbox" id="check-sight-3" value="sight-3">
+                <label class="form-check-label" for="check-sight-3">
+                  Слайд-парк
+                </label>
+              </div>
+              <div class="form-check col-lg-5 col-xl-auto">
+                <input class="form-check-input sight-check sr-only" type="checkbox" id="check-sight-4" value="sight-4">
+                <label class="form-check-label" for="check-sight-4">
+                  Красные скалы
+                </label>
+              </div>
+            </div>
+          </div>
+          
+          <div class="form-review review col-12 order-lg-4">
+            <h5 class="form-subtitle form-subtitle--line text-center">Опишите свои эмоции:</h5>
+            <div class="form-group">
+              <textarea class="form-control review-text" id="text-review" rows="3" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+          </div>
+          
+          <div class="form-feedback feedback col-12 order-lg-5 d-lg-flex justify-content-lg-between align-items-center">
+            <input class="btn feedback-btn" type="submit" value="Отправить отзыв">
+            <p class="form-required-text d-none d-lg-block">*&nbsp; &#150 &nbsp;обязательные поля</p>
+          </div>
+          
+        </div>
+      </div>
+      
+    </form>
+
+    <footer class="page-footer footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 text-center footer-link-wrapper">
+            <p class="footer-text">#VisitSedona</p>
+          </div>
+          <div class="col-12 col-lg-4 social">
+            <ul class="social-list d-flex justify-content-center">
+              <li class="social-item">
+                <a href="#" class="social-link btn">
+                  <svg class="social-img" width="17.5" height="14.663">
+                    <use xlink:href="#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link btn">
+                  <svg class="social-img" width="8.672" height="18.944">
+                    <use xlink:href="#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="#" class="social-link btn">
+                  <svg class="social-img" width="19.979" height="14.015">
+                    <use xlink:href="#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-lg-4 text-center about">
+            <a href="#" class="about-link">
+              Разработано
+              <svg class="about-img" width="26.943" height="34.09">
+                <use xlink:href="#logo-htmlacademy"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

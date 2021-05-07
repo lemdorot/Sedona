@@ -1,0 +1,86 @@
+.form-subtitle {
+  position: relative;
+  margin-bottom: 21px;
+	font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  
+  @media (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 21px;
+    width: 400px;
+  }
+}
+
+.form-subtitle--line {
+  @media (min-width: 768px) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: -124px;
+      width: 648px;
+      height: 1px;
+      background-color: #dbdbdb;
+      z-index: -1;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    &::before {
+      left: -280px;
+      width: 960px;
+    }
+  }
+    
+}
+
+.form-wrapper {
+  @media (min-width: 768px) {
+    padding: 0 60px;
+  }
+  
+  @media (min-width: 1200px) {
+    padding: 0 120px;
+  }
+}
+
+.form-personal,
+.form-contacts,
+.form-impression,
+.form-sight,
+.form-review {
+	padding-top: 18px;
+  margin-bottom: 5px;
+  border-top: 1px solid #e5e5e5;
+  
+  @media (min-width: 768px) {
+    border: none;
+  }
+}
+
+.form-contacts {
+  margin-bottom: 15px;
+}
+
+.form-sight {
+  margin-bottom: 4px;
+}
+
+.form-impression {
+  margin-bottom: 13px;
+}
+
+.form-control {
+  height: auto;
+  transition: 0.15s;
+}
+
+.form-check-label,
+.form-check-label:before,
+.form-check-label:after {
+  transition: 0.15s;
+}

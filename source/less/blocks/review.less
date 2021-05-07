@@ -1,0 +1,51 @@
+.review {
+  margin-bottom: 36px;
+  
+  @media (min-width: 768px) {
+    margin-bottom: 42px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  & .form-group {
+    padding: 0 5px;
+    
+    @media (min-width: 768px) {
+      padding: 0;
+    }
+  }
+  
+  & .form-subtitle {
+    margin-bottom: 16px;
+    
+    @media (min-width: 768px) {
+      margin-bottom: 57px;
+    }
+  }
+  
+  & .review-text {
+    padding: 14px 16px;
+    min-height: 160px;
+    border: none;
+    border-radius: 0;
+    background-color: #f2f2f2;
+    border: 3px solid #f2f2f2;
+    resize: none;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+
+    &:hover {
+      background-color: #e5e5e5;
+      border-color: #e5e5e5;
+    }
+
+    &:active,
+    &:focus {
+      background-color: #fff;
+      border-color: #e5e5e5;
+      box-shadow: none;
+    }
+  }
+}

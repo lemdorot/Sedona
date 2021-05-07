@@ -1,0 +1,145 @@
+.navbar {
+	padding: 0;
+}
+
+.nav-item {
+  background-color: #81b3d2;
+  border-bottom: 1px solid #678fa8;
+  border-top: 1px solid #9ac2db;
+  
+  &:first-child {
+    border-top: none;
+  }
+  
+  &:last-child {
+    border-bottom: none;
+    box-shadow: inset 0px -3px 4px 0px rgba(108,150,176,1);
+  }
+  
+  @media (min-width: 768px) {
+    background-color: transparent;
+    border: none;
+    width: 20%;
+    
+    &:nth-child(2) {
+      margin-right: auto;
+    }
+    
+    &:nth-child(3) {
+      margin-left: auto;
+    }
+    
+    &:last-child {
+      box-shadow: none;
+    }
+  }
+}
+
+.nav-link {
+  padding: 7px 0;
+	font-size: 18px;
+  line-height: 40px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    color: #604e43;
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255,255,255, .3);
+    background-color: #5496bd;
+  }
+  
+  @media (min-width: 768px) {
+    padding: 15px 0;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000;
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+      background-color: transparent;
+    }
+
+    &:active {
+      color: rgba(0, 0 , 0, .3);
+      background-color: transparent;
+    }
+  }
+}
+
+.navbar-toggler {
+	position: absolute;
+  top: 8px;
+  right: 4px;
+  border: none;
+  outline: none;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("../images/icon-menu.svg");
+  background-size: 23px 22px; 
+}
+
+.show ~ .navbar-toggler .navbar-toggler-icon {
+	background-image: url("../images/icon-cross.svg") !important; 
+  background-size: 23px 23px; 
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-right: 0;
+  margin-bottom: -27px;
+  z-index: 100;
+  
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -50.5px;
+  }
+  
+  @media (min-width: 1200px) {
+    margin-left: -98.5px;
+  }
+}
+
+.navbar-img {
+  @media (min-width: 1200px) {
+    width: 187px;
+    height: 97px;
+  }
+}
+
+.navbar-nav .active>.nav-link {
+  color: #766357;
+
+  &:hover,
+  &:focus {
+    color: #604e43;
+  }
+
+  &:active {
+    color: rgba(118, 99, 87, .3);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
